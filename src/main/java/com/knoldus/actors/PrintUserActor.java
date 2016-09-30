@@ -10,6 +10,9 @@ import scala.runtime.BoxedUnit;
 
 /**
  * Created by Harmeet Singh(Taara) on 29/9/16.
+ *
+ * This actor is used to print the users only. We are never creating actors, which are not pass the message
+ * to another actor. This is used of our demo purpose.
  */
 public class PrintUserActor extends AbstractLoggingActor {
 
@@ -17,10 +20,19 @@ public class PrintUserActor extends AbstractLoggingActor {
 
     private PrintUserActor() {}
 
+    /**
+     * This method is used for create the Pops of PrintUserActor actor.
+     * @return PrintUserActor actor props
+     * @see PrintUserActor
+     */
     public static Props props(){
         return Props.create(PrintUserActor.class);
     }
 
+    /**
+     * This method is used for handle received message of actor.
+     * @return
+     */
     @Override
     public PartialFunction<Object, BoxedUnit> receive() {
         return ReceiveBuilder.
@@ -33,6 +45,10 @@ public class PrintUserActor extends AbstractLoggingActor {
                 build();
     }
 
+    /**
+     * This is class for handling message of PrintUserActor.
+     * @see PrintUserActor
+     */
     public static class PrintUser {
         private final List<User> users;
 

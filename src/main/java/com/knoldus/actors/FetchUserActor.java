@@ -12,6 +12,9 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * Created by Harmeet Singh(Taara) on 20/8/16.
+ *
+ * This actor used to fetch the details of users from query and pass the CompletableFuture using pipe
+ * to next actor
  */
 public class FetchUserActor extends AbstractLoggingActor {
 
@@ -25,10 +28,21 @@ public class FetchUserActor extends AbstractLoggingActor {
         this.printUsersActorRef = printUsersActorRef;
     }
 
+    /**
+     * This method is used for create the Pops of FetchUserActor actor.
+     * @param printUsersActorRef reference of another actor for send the message
+     * @param userService used to fetch the users
+     * @return FetchUserActor actor props
+     * @see FetchUserActor
+     */
     public static Props props(final ActorRef printUsersActorRef, final UserService userService) {
         return Props.create(FetchUserActor.class, printUsersActorRef, userService);
     }
 
+    /**
+     * This method is used for handle received message of actor.
+     * @return
+     */
     @Override
     public PartialFunction<Object, BoxedUnit> receive() {
         return ReceiveBuilder.
@@ -43,6 +57,10 @@ public class FetchUserActor extends AbstractLoggingActor {
                 build();
     }
 
+    /**
+     * This is class for handling message of FetchUserActor.
+     * @see FetchUserActor
+     */
     public static class Query {
         private final String query;
 
