@@ -10,3 +10,10 @@ This applications follow standards tools for maintaining code quality and best p
    - Depedendency Graph
    - Checkstyle
    - Findbugs
+   
+Below are the commands for building and running the application: 
+```
+{project_dir} $ sbt clean compile test
+
+{project_dir} $ sbt run
+```
