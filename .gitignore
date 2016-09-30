@@ -1,0 +1,7 @@
+bin
+target
+*.class
+.idea
+.git
+project/target
+project/project
