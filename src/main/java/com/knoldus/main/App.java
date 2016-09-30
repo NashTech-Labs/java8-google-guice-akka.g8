@@ -7,7 +7,7 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
 /**
- * Created by harmeet on 29/9/16.
+ * Created by Harmeet Singh(Taara) on 29/9/16.
  */
 public class App {
 

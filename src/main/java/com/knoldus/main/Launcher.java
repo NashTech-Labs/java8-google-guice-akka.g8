@@ -5,7 +5,7 @@ import com.google.inject.Injector;
 import com.knoldus.config.ActorSystemModule;
 
 /**
- * Created by harmeet on 29/9/16.
+ * Created by Harmeet Singh(Taara) on 29/9/16.
  */
 public class Launcher {
 

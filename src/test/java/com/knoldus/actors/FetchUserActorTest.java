@@ -16,7 +16,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
- * Created by harmeet on 29/9/16.
+ * Created by Harmeet Singh(Taara) on 29/9/16.
  */
 public class FetchUserActorTest {
 

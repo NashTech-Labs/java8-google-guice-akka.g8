@@ -11,7 +11,7 @@ import static akka.pattern.PatternsCS.pipe;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * Created by harmeet on 20/8/16.
+ * Created by Harmeet Singh(Taara) on 20/8/16.
  */
 public class FetchUserActor extends AbstractLoggingActor {
 

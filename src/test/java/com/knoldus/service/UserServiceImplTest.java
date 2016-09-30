@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by harmeet on 30/9/16.
+ * Created by Harmeet Singh(Taara) on 30/9/16.
  */
 public class UserServiceImplTest {
     

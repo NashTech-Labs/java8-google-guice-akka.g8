@@ -9,7 +9,7 @@ import com.knoldus.models.User;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * Created by harmeet on 29/9/16.
+ * Created by Harmeet Singh(Taara) on 29/9/16.
  */
 public class UserServiceImpl implements UserService {
 

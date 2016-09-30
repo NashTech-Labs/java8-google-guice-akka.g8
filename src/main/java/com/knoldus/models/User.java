@@ -3,7 +3,7 @@ package com.knoldus.models;
 import java.util.Objects;
 
 /**
- * Created by harmeet on 29/9/16.
+ * Created by Harmeet Singh(Taara) on 29/9/16.
  */
 public class User {
 

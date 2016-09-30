@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 import static akka.pattern.PatternsCS.ask;
 
 /**
- * Created by harmeet on 29/9/16.
+ * Created by Harmeet Singh(Taara) on 29/9/16.
  */
 public class ActorSystemModule extends AbstractModule {
 

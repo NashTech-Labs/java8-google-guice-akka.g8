@@ -35,4 +35,4 @@ initialize := {
     sys.error("Java 8 is required for this project.")
 }
 
-mainClass in (Compile, run) := Some("Launcher")
+mainClass in (Compile, run) := Some("com.knoldus.main.Launcher")

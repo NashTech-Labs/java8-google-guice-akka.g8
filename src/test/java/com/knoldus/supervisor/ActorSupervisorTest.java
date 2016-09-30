@@ -18,7 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Created by harmeet on 30/9/16.
+ * Created by Harmeet Singh(Taara) on 30/9/16.
  */
 public class ActorSupervisorTest {
 
