@@ -1,19 +1,16 @@
-# Java 8 with Goole Guice and Akka
+This is a [Giter8][g8] template for Akka and Google Guice in Java 8.
 
-This is pure java based sbt, sample application using **Java 8 lamdas**, **Google Guice for DI** and **Akka** for concurrency and fault tolerance. This application used **Akka** **Abstract** classes for building actors and **Builder** classes for handling actor messages.
-
-**Abstract** classes and **Builder** classes is the way for remove biolerplate code from java and write neat and clean code as relevant to scala. We are creating test cases for actors and Java 8 **CompletableFuture** for handling concurrency.
-
-This applications follow standards tools for maintaining code quality and best practices, below are the list: 
-   - Jacoco for Test Coverage
-   - CPD for Copy Paste Detection
-   - Depedendency Graph
-   - Checkstyle
-   - Findbugs
-   
-Below are the commands for building and running the application: 
 ```
-{project_dir} $ sbt clean compile test
-
-{project_dir} $ sbt run
+sbt new knoldus/java8-google-guice-akka.g8
 ```
+
+License
+-------
+Written in **2016** by [Knoldus Software LLP](http://knoldus.com)
+[other author/contributor lines as appropriate]
+
+To the extent possible under law, the author(s) have dedicated all copyright and related
+and neighboring rights to this template to the public domain worldwide.
+This template is distributed without any warranty. See <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+[g8]: http://www.foundweekends.org/giter8/
